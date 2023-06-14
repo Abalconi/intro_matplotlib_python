@@ -53,5 +53,33 @@ if __name__ == '__main__':
     # Colocar una grilla a elección
 
     # Crear acá su gráfico
+    def line_plot():
+        
+        fig = plt.figure()
+        fig.suptitle('Grafica de 4 funciones', fontsize = 24)
+        ax1 = fig.add_subplot(2, 2, 1)
+        ax2 = fig.add_subplot(2, 2, 2)
+        ax3 = fig.add_subplot(2, 2, 3)
+        ax4 = fig.add_subplot(2, 2, 4)
+
+        ax1.plot(x, y1, c='darkgreen', label = 'Cuadratica')
+        ax1.legend()
+        ax1.grid()
+
+        ax2.plot(x, y2, c='darkred', label = 'Cubica')
+        ax2.legend()
+        ax2.grid()
+
+        ax3.plot(x, y3, c='green', label = 'A la cuarta')
+        ax3.legend()
+        ax3.grid()
+
+        ax4.plot(x, y4, c='blue', label = 'Raiz Cuadrada')
+        ax4.legend()
+        ax4.grid()
+
+        plt.show()
+        
+    line_plot()
 
     print("terminamos")
