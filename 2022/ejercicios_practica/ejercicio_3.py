@@ -33,5 +33,18 @@ if __name__ == '__main__':
     # Elegir un marker a elección
 
     # Crear acá su gráfico
+    def scatter_plot():
+        
+        fig = plt.figure()
+        fig.suptitle('Scatter Plot', fontsize=18)
+        ax = fig.add_subplot()
+
+        ax.plot(x, y, c='darkgreen')
+        ax.legend()
+        ax.grid()
+
+        plt.show()
+
+    scatter_plot() 
 
     print("terminamos")
