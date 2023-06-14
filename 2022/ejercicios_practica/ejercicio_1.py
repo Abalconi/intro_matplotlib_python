@@ -35,4 +35,21 @@ if __name__ == '__main__':
 
     # Crear acá su gráfico
 
+    def line_plot():
+
+    # Realizaremos un gráfico "plot" con:
+    # years como "x"
+    # poblacion como "y"
+
+        fig = plt.figure()
+        fig.suptitle('Función Cuadratica', fontsize=20)
+        ax = fig.add_subplot()
+
+        ax.plot(x, y, c='darkgreen', label='Funcion')
+        ax.legend()
+        ax.grid()
+        plt.show()
+    
+    line_plot()
+
     print("terminamos")
