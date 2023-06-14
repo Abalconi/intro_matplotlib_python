@@ -46,4 +46,20 @@ if __name__ == '__main__':
 
     # Crear acá su gráfico
 
+    def line_plot():
+
+
+        fig = plt.figure()
+        fig.suptitle('Dos funciones en una grafica', fontsize=20)
+        ax = fig.add_subplot()
+
+        ax.plot(x, y1, c='red', label='Cuadratica')
+        ax.plot(x, y2, c='yellow', label='Cubica')
+
+        ax.legend()
+        ax.grid()
+        plt.show()
+    
+    line_plot()
+
     print("terminamos")
